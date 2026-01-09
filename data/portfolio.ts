@@ -106,14 +106,19 @@ export const portfolio = {
   },
 
   education: [
-    {
-      school: "À compléter : Nom de ton école",
-      degree: "À compléter : Formation / diplôme",
-      period: "À compléter : 2024 — 2026",
-      details: [
-        "À compléter : spécialité (Fullstack/Web)",
-        "À compléter : projets marquants (Phoenix, React, Docker, PostgreSQL...)",
-      ],
-    },
-  ],
+  {
+    school: "Université Badji Mokhtar, Annaba",
+    degree: "Licence en systèmes informatiques",
+    period: "2020 — 2023",
+    details: [
+      "Licence en systèmes informatiques (mathématiques et informatique).",
+    ],
+  },
+  {
+    school: "Lycée Boutaba Bachir, Annaba",
+    degree: "Baccalauréat scientifique",
+    period: "2019 — 2020",
+    details: [],
+  },
+],
 };
