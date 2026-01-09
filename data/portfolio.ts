@@ -1,20 +1,19 @@
 export const portfolio = {
-  name: "Yasmine",
+  name: "Yasmine SERIANI",
   role: "Développeuse Fullstack",
   tagline: "Je construis des applications web claires, rapides et bien structurées.",
-  location: "Paris, France",
+  location: "Île-de-France, France",
 
-  // Ta photo (mets ton fichier dans /public)
+  
   avatar: {
-    src: "/yasmine.jpg", // ⚠️ mets bien ta photo dans public/yasmine.jpg
+    src: "/yasmine.jpg", 
     alt: "Photo de Yasmine",
   },
 
-  // Petite présentation (tu peux la modifier)
+
   bio:
     "Développeuse fullstack basée à Paris. J’aime construire des applications web claires, maintenables et orientées utilisateur, du front (React/Next.js) au back (API, base de données).",
 
-  // 3 points rapides qui se lisent vite
   highlights: [
     "React / Next.js • UI responsive",
     "API REST • Validation • Auth",
@@ -108,21 +107,6 @@ export const portfolio = {
       link: "https://github.com/TON_GITHUB/ludokan",
     },
   ],
-
-  lookingFor: {
-    title: "Ce que je recherche",
-    role: "Alternance / CDI — Développeuse Fullstack (ou Front-end)",
-    location: "Paris / Remote partiel",
-    start: "Disponible à partir de : à préciser",
-    rhythm: "Rythme : à préciser (ex: 3 semaines entreprise / 1 semaine école)",
-    interests: [
-      "Front moderne (React/Next.js) avec composants propres",
-      "Back-end solide : API REST, validation, auth, pagination",
-      "PostgreSQL : schémas, relations, migrations",
-      "Qualité : documentation, tests, bonnes pratiques",
-    ],
-  },
-
   education: [
     {
     school: "École informatique Paris, Epitech",
