@@ -51,21 +51,39 @@ export const portfolio = {
     keywords: ["Fullstack", "React/Next", "API", "PostgreSQL", "Docker"],
   },
 
-  // ✅ Expériences (à compléter)
   experiences: [
-    {
-      title: "Alternante / Développeuse (à compléter)",
-      company: "Entreprise (à compléter)",
-      period: "2025 — 2026",
-      location: "Paris",
-      bullets: [
-        "Développement de fonctionnalités front (React/Next.js) et intégration API.",
-        "Participation à la conception d’API (validation, endpoints, documentation).",
-        "Amélioration UI/UX et correction de bugs, travail en équipe (Git).",
-      ],
-      stack: ["React", "Next.js", "API", "PostgreSQL", "Git"],
-    },
-  ],
+  {
+    title: "Alternante DevOps OpenShift",
+    company: "BPCE Infogérance & Technologies",
+    location: "Paris, France",
+    period: "2024 — 2026",
+    bullets: [
+      "Conteneurisation et déploiement d’applications sur OpenShift / Kubernetes.",
+      "Gestion des namespaces et des politiques de ressources.",
+      "Mise en œuvre des objets Kubernetes/OpenShift : Deployment, Service, Route, ConfigMap, Secret.",
+      "Gestion de la persistance via PVC (PersistentVolumeClaim) pour les pods et conteneurs.",
+      "Utilisation et compréhension de pipelines CI/CD pour automatiser le build et le déploiement.",
+      "Rédaction et maintenance de Jenkinsfiles, Dockerfiles et scripts Bash.",
+      "Déploiements applicatifs avec XL Deploy et gestion des artefacts via Artifactory.",
+      "Travail en environnement Bitbucket (Git) et suivi des tickets/tâches via Jira.",
+      "Développement d’APIs Python (Flask, FastAPI) et front React intégrés à la chaîne CI/CD.",
+    ],
+    stack: [
+      "OpenShift",
+      "Kubernetes",
+      "CI/CD",
+      "Jenkins",
+      "Docker",
+      "XL Deploy",
+      "Artifactory",
+      "Bitbucket",
+      "Jira",
+      "Python (Flask/FastAPI)",
+      "React",
+      "Bash",
+    ],
+  },
+],
 
   projects: [
     {
