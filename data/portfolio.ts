@@ -106,12 +106,18 @@ export const portfolio = {
   },
 
   education: [
+    {
+    school: "École informatique Paris, Epitech",
+    degree: "Master en Big Data",
+    period: "2023 — 2026",
+    details: [],
+  },
   {
     school: "Université Badji Mokhtar, Annaba",
     degree: "Licence en systèmes informatiques",
     period: "2020 — 2023",
     details: [
-      "Licence en systèmes informatiques (mathématiques et informatique).",
+      "Licence en systèmes informatiques (tronc commun mathématiques et informatique).",
     ],
   },
   {
