@@ -41,24 +41,23 @@ export type Portfolio = {
 
 export const portfolio: Portfolio = {
   name: "Yasmine SERIANI",
-  role: "DevOps OpenShift",
+  role: "DevOps OpenShift (avec base Fullstack)",
   tagline:
-    "Du code à la prod : conteneurisation, CI/CD et déploiements OpenShift/Kubernetes (Jenkins, Artifactory, XL Deploy/XL Release). Background dev : React + Python (FastAPI/Flask).",
-  location: "Île-de-France, France — Disponible en CDI à partir d’octobre 2026",
+    "Du code à la prod : conteneurisation, CI/CD et déploiements sur OpenShift/Kubernetes (Jenkins, Artifactory, XL Deploy/XL Release).",
+  location: "Île-de-France, France — CDI à partir d’octobre 2026",
+
+  bio:
+    "Alternante DevOps OpenShift chez BPCE-IT. Je développe et déploie des applications sur OpenShift (objets, configuration, persistance) et je contribue aux pipelines CI/CD. Mon background Fullstack (React + Python FastAPI/Flask) me permet de comprendre l’application et de sécuriser sa livraison en production.",
   avatar: {
     src: "/yasmine.jpg",
     alt: "Photo de Yasmine",
   },
 
-  bio:
-    "Développeuse fullstack basée à Paris. J’aime construire des applications web claires, maintenables et orientées utilisateur, du front (React/Next.js) au back (API, base de données).",
-
   highlights: [
-    "React / Next.js • UI responsive",
-    "API REST • Validation • Auth",
-    "PostgreSQL • Docker • Git",
-  ],
-
+  "OpenShift / Kubernetes • Deployments • Routes • ConfigMap/Secret • PVC",
+  "CI/CD • Jenkins • Artifactory • XL Deploy • XL Release • Docker",
+  "React • Python (FastAPI/Flask) • APIs • Swagger/OpenAPI",
+],
   links: {
     github: "https://github.com/TON_GITHUB",
     linkedin: "https://www.linkedin.com/in/yasmine-seriani-123ab4291/",
