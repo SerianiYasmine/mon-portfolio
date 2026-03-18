@@ -63,9 +63,11 @@ export const portfolio = {
       "Gestion de la persistance via PVC (PersistentVolumeClaim) pour les pods et conteneurs.",
       "Utilisation et compréhension de pipelines CI/CD pour automatiser le build et le déploiement.",
       "Rédaction et maintenance de Jenkinsfiles, Dockerfiles et scripts Bash.",
-      "Déploiements applicatifs avec XL Deploy et gestion des artefacts via Artifactory.",
+      "Déploiements applicatifs avec XL Deploy et XL Release, gestion des workflows de release et orchestrations.",
+      "Gestion des artefacts via Artifactory.",
       "Travail en environnement Bitbucket (Git) et suivi des tickets/tâches via Jira.",
       "Développement d’APIs Python (Flask, FastAPI) et front React intégrés à la chaîne CI/CD.",
+      
     ],
     stack: [
       "OpenShift",
@@ -74,6 +76,7 @@ export const portfolio = {
       "Jenkins",
       "Docker",
       "XL Deploy",
+      "Xl Release",
       "Artifactory",
       "Bitbucket",
       "Jira",
@@ -110,9 +113,16 @@ export const portfolio = {
   education: [
     {
     school: "École informatique Paris, Epitech",
-    degree: "Master en Big Data",
+    degree: "Master Architecte en Systèmes d’Information",
     period: "2023 — 2026",
-    details: [],
+    details: [
+      "Travail en équipe sur des projets : organisation, collaboration, livrables et documentation.",
+      "Conception et architecture d’applications : modularité, choix techniques, patterns et bonnes pratiques.",
+      "Data / Big Data : traitement et analyse de données, structuration et exploitation de datasets.",
+      "IA : mise en place de modèles simples, évaluation (métriques) et intégration dans des applications.",
+      "Développement front-end avec React.",
+      "Qualité et méthode : Git, revue de code, tests/validation, maintenance et amélioration continue.",
+    ],
   },
   {
     school: "Université Badji Mokhtar, Annaba",
