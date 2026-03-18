@@ -269,35 +269,51 @@ export default function Home() {
         {/* PROJECTS */}
         <Section id="projects" title="Projets">
           <div className="grid gap-4 md:grid-cols-2">
-            {portfolio.projects.map((p) => (
-              <a
-                key={p.title}
-                href={p.link}
-                target="_blank"
-                rel="noreferrer"
-                className={`
-                  ${card}
-                  transition
-                  hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(2,6,23,0.14)]
-                  dark:hover:shadow-[0_22px_70px_rgba(0,0,0,0.55)]
-                `}
-              >
-                <div className="flex items-start justify-between gap-3">
-                  <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">{p.title}</h3>
-                  <span className="text-neutral-400" aria-hidden>
-                    ↗
-                  </span>
-                </div>
+            {portfolio.projects.map((p) => {
+              const Wrapper: React.ElementType = p.link ? "a" : "div";
+              return (
+                <Wrapper
+                  key={p.title}
+                  {...(p.link ? { href: p.link, target: "_blank", rel: "noreferrer" } : {})}
+                  className={`
+                    ${card}
+                    transition
+                    ${
+                      p.link
+                        ? "hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(2,6,23,0.14)] dark:hover:shadow-[0_22px_70px_rgba(0,0,0,0.55)]"
+                        : ""
+                    }
+                  `}
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+                      {p.title}
+                    </h3>
+                    {p.link ? (
+                      <span className="text-neutral-400" aria-hidden>
+                        ↗
+                      </span>
+                    ) : null}
+                  </div>
 
-                <p className="mt-2 text-neutral-800/90 dark:text-neutral-300">{p.description}</p>
+                  <p className="mt-2 text-neutral-800/90 dark:text-neutral-300">{p.description}</p>
 
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {p.stack.map((t) => (
-                    <Badge key={t}>{t}</Badge>
-                  ))}
-                </div>
-              </a>
-            ))}
+                  {p.mission ? (
+                    <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-400">{p.mission}</p>
+                  ) : null}
+
+                  {p.note ? (
+                    <p className="mt-3 text-sm text-neutral-600 dark:text-neutral-400">{p.note}</p>
+                  ) : null}
+
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {p.stack.map((t) => (
+                      <Badge key={t}>{t}</Badge>
+                    ))}
+                  </div>
+                </Wrapper>
+              );
+            })}
           </div>
         </Section>
 
