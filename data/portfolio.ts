@@ -13,7 +13,7 @@ export type Project = {
   stack: string[];
   note?: string;
   mission?: string;
-  link?: string; // ✅ optionnel
+  link?: string; 
 };
 
 export type Education = {
@@ -41,10 +41,10 @@ export type Portfolio = {
 
 export const portfolio: Portfolio = {
   name: "Yasmine SERIANI",
-  role: "Développeuse Fullstack",
-  tagline: "Je construis des applications web claires, rapides et bien structurées.",
-  location: "Île-de-France, France",
-
+  role: "DevOps OpenShift",
+  tagline:
+    "Du code à la prod : conteneurisation, CI/CD et déploiements OpenShift/Kubernetes (Jenkins, Artifactory, XL Deploy/XL Release). Background dev : React + Python (FastAPI/Flask).",
+  location: "Île-de-France, France — Disponible en CDI à partir d’octobre 2026",
   avatar: {
     src: "/yasmine.jpg",
     alt: "Photo de Yasmine",
