@@ -1,0 +1,6 @@
+# garder LF partout
+* text=auto eol=lf
+
+# (optionnel) windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf

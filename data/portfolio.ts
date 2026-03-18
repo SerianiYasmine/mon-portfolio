@@ -96,12 +96,20 @@ export const portfolio = {
       link: "https://github.com/TON_GITHUB/time-manager",
     },
     {
-      title: "Kubernetes Role Generator",
-      description:
-        "API Flask + front React pour générer des Role/ClusterRole YAML depuis un fichier config, avec profils et ressources.",
-      stack: ["Flask", "React", "Swagger"],
-      link: "https://github.com/TON_GITHUB/k8s-role-generator",
-    },
+  title: "RoleApp — OpenShift Role Generator",
+  description:
+    "Application web (API Flask + front React) qui génère des Role/ClusterRole OpenShift/Kubernetes en YAML, prêts à être appliqués directement sur OpenShift. Profils et ressources configurables, validation des entrées et documentation API.",
+  stack: [
+    "Python (Flask)",
+    "React",
+    "Swagger/OpenAPI",
+    "Jenkins",
+    "Artifactory",
+    "XL Deploy",
+    "OpenShift",
+    "Docker",
+  ],
+},
     {
       title: "LudoKan",
       description:
