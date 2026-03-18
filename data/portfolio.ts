@@ -31,7 +31,7 @@ export type Portfolio = {
   avatar: { src: string; alt: string };
   bio: string;
   highlights: string[];
-  links: { github: string; linkedin: string; email: string; cv: string };
+  links: { linkedin: string; email: string; cv: string };
   skills: string[];
   quickProfile: { title: string; bullets: string[]; keywords: string[] };
   experiences: Experience[];
@@ -59,7 +59,6 @@ export const portfolio: Portfolio = {
   "React • Python (FastAPI/Flask) • APIs • Swagger/OpenAPI",
 ],
   links: {
-    github: "https://github.com/TON_GITHUB",
     linkedin: "https://www.linkedin.com/in/yasmine-seriani-123ab4291/",
     email: "mailto:y.seriani23@gmail.com",
     cv: "/cv.pdf",
