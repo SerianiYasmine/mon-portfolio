@@ -13,7 +13,7 @@ export type Project = {
   stack: string[];
   note?: string;
   mission?: string;
-  link?: string; 
+  link?: string; // optionnel
 };
 
 export type Education = {
@@ -31,7 +31,7 @@ export type Portfolio = {
   avatar: { src: string; alt: string };
   bio: string;
   highlights: string[];
-  links: { linkedin: string; email: string; cv: string };
+  links: { github: string; linkedin: string; email: string; cv: string }; // ✅ github ajouté
   skills: string[];
   quickProfile: { title: string; bullets: string[]; keywords: string[] };
   experiences: Experience[];
@@ -48,42 +48,50 @@ export const portfolio: Portfolio = {
 
   bio:
     "Alternante DevOps OpenShift chez BPCE-IT. Je développe et déploie des applications sur OpenShift (objets, configuration, persistance) et je contribue aux pipelines CI/CD. Mon background Fullstack (React + Python FastAPI/Flask) me permet de comprendre l’application et de sécuriser sa livraison en production.",
+
   avatar: {
     src: "/yasmine.jpg",
     alt: "Photo de Yasmine",
   },
 
   highlights: [
-  "OpenShift / Kubernetes • Deployments • Routes • ConfigMap/Secret • PVC",
-  "CI/CD • Jenkins • Artifactory • XL Deploy • XL Release • Docker",
-  "React • Python (FastAPI/Flask) • APIs • Swagger/OpenAPI",
-],
+    "OpenShift / Kubernetes • Deployments • Routes • ConfigMap/Secret • PVC",
+    "CI/CD • Jenkins • Artifactory • XL Deploy • XL Release • Docker",
+    "React • Python (FastAPI/Flask) • APIs • Swagger/OpenAPI",
+  ],
+
   links: {
+    github: "https://github.com/TON_GITHUB",
     linkedin: "https://www.linkedin.com/in/yasmine-seriani-123ab4291/",
     email: "mailto:y.seriani23@gmail.com",
     cv: "/cv.pdf",
   },
 
   skills: [
+    "OpenShift",
+    "Kubernetes",
+    "CI/CD",
+    "Jenkins",
+    "Docker",
+    "Artifactory",
+    "XL Deploy",
+    "XL Release",
     "React",
     "Next.js",
-    "Vue.js",
-    "Elixir / Phoenix",
-    "Python / Flask",
-    "PostgreSQL",
-    "Docker",
-    "Git",
+    "TypeScript",
+    "Python (FastAPI/Flask)",
     "Swagger / OpenAPI",
+    "Git",
   ],
 
   quickProfile: {
     title: "Profil en 30 secondes",
     bullets: [
-      "Fullstack (React/Next.js + API) — focus sur code propre et UX.",
-      "À l’aise avec PostgreSQL, Docker, Git, Swagger/OpenAPI.",
-      "Projets orientés entreprise : Time Manager, Role Generator Kubernetes.",
+      "DevOps OpenShift (alternance BPCE-IT) : déploiement et exploitation d’applications sur OpenShift/Kubernetes.",
+      "CI/CD & delivery : Jenkins, Artifactory, XL Deploy/XL Release, Docker — automatisation du build et des déploiements.",
+      "Background dev (React + Python FastAPI/Flask) : je comprends l’app pour mieux l’industrialiser et la mettre en prod.",
     ],
-    keywords: ["Fullstack", "React/Next", "API", "PostgreSQL", "Docker"],
+    keywords: ["DevOps", "OpenShift", "Kubernetes", "CI/CD", "Jenkins", "XL Deploy", "XL Release"],
   },
 
   experiences: [
@@ -142,7 +150,7 @@ export const portfolio: Portfolio = {
     {
       title: "Cluster Health Check App (BPCE-IT)",
       description:
-        "Application interne développée chez BPCE-IT (API FastAPI + front React) pour valider l’état de santé d’un cluster lors de sa livraison. Déployée sur OpenShift et intégrée à la chaîne CI/CD (Jenkins, Artifactory, XL Deploy). Automatisation de tâches via XL Release.",
+        "Application interne (API FastAPI + front React) pour valider l’état de santé d’un cluster lors de sa livraison. Déployée sur OpenShift et intégrée à la chaîne CI/CD (Jenkins, Artifactory, XL Deploy). Automatisation de tâches via XL Release.",
       stack: [
         "Python (FastAPI)",
         "React",
@@ -197,9 +205,7 @@ export const portfolio: Portfolio = {
       school: "Université Badji Mokhtar, Annaba",
       degree: "Licence en systèmes informatiques",
       period: "2020 — 2023",
-      details: [
-        "Licence en systèmes informatiques (tronc commun mathématiques et informatique).",
-      ],
+      details: ["Licence en systèmes informatiques (tronc commun mathématiques et informatique)."],
     },
     {
       school: "Lycée Boutaba Bachir, Annaba",

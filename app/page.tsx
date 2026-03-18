@@ -53,8 +53,7 @@ function Section({
   );
 }
 
-const card =
-  `
+const card = `
   rounded-3xl p-6
   bg-white/55 shadow-[0_10px_30px_rgba(2,6,23,0.08)]
   ring-1 ring-black/5 backdrop-blur
@@ -271,6 +270,7 @@ export default function Home() {
           <div className="grid gap-4 md:grid-cols-2">
             {portfolio.projects.map((p) => {
               const Wrapper: React.ElementType = p.link ? "a" : "div";
+
               return (
                 <Wrapper
                   key={p.title}
@@ -370,6 +370,7 @@ export default function Home() {
               >
                 LinkedIn
               </a>
+
               <a
                 className="
                   rounded-xl px-4 py-2.5
@@ -384,6 +385,7 @@ export default function Home() {
               >
                 GitHub
               </a>
+
               <a
                 className="
                   rounded-xl px-4 py-2.5
