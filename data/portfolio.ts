@@ -89,14 +89,7 @@ export const portfolio = {
 
   projects: [
     {
-      title: "Time Manager",
-      description:
-        "API + front pour gérer horaires, clocks et working times, avec visualisation via dashboard.",
-      stack: ["Vue.js", "Phoenix", "PostgreSQL"],
-      link: "https://github.com/TON_GITHUB/time-manager",
-    },
-    {
-  title: "RoleApp — OpenShift Role Generator",
+  title: "RoleApp — OpenShift Role Generator (BPCE-IT)",
   description:
     "Application web (API Flask + front React) qui génère des Role/ClusterRole OpenShift/Kubernetes en YAML, prêts à être appliqués directement sur OpenShift. Profils et ressources configurables, validation des entrées et documentation API.",
   stack: [
@@ -109,14 +102,46 @@ export const portfolio = {
     "OpenShift",
     "Docker",
   ],
+  note: "Projet réalisé chez BPCE-IT",
+},
+{
+  title: "Cluster Health Check App (BPCE-IT)",
+  description:
+    "Application interne développée chez BPCE-IT (API FastAPI + front React) pour valider l’état de santé d’un cluster lors de sa livraison. Déployée sur OpenShift et intégrée à la chaîne CI/CD (Jenkins, Artifactory, XL Deploy). Automatisation de tâches via XL Release.",
+  stack: [
+    "Python (FastAPI)",
+    "React",
+    "Jenkins",
+    "Artifactory",
+    "XL Deploy",
+    "XL Release",
+    "OpenShift",
+  ],
+  note: "Projet réalisé chez BPCE-IT",
 },
     {
-      title: "LudoKan",
-      description:
-        "Site de jeux vidéo : UI moderne, pages catalogue, composants réutilisables et design responsive.",
-      stack: ["React", "Tailwind"],
-      link: "https://github.com/TON_GITHUB/ludokan",
-    },
+  title: "LudoKan — Plateforme jeux de société",
+  description:
+    "Application web moderne pour les passionnés de jeux de société : gestion de bibliothèque, organisation de sessions, recommandations de jeux, interactions entre joueurs et suivi de statistiques. Architecture full-stack avec front React/TypeScript et API Django REST, le tout containerisé via Docker.",
+  mission:
+    "Développeuse Front-End React : conception et intégration d’une interface moderne et responsive, développement de composants React (TypeScript), consommation de l’API REST, mise en place des bonnes pratiques (ESLint/Prettier) et participation au travail en équipe.",
+  stack: [
+    "React 18",
+    "TypeScript",
+    "Vite",
+    "ESLint",
+    "Prettier",
+    "Django",
+    "Django REST Framework",
+    "PostgreSQL",
+    "Redis",
+    "Celery",
+    "JWT",
+    "Docker",
+    "Docker Compose",
+  ],
+  note: "Projet de fin d'études à Epitech, réalisé en équipe",
+}
   ],
   education: [
     {
