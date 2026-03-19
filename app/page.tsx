@@ -177,21 +177,6 @@ export default function Home() {
                   ring-1 ring-black/5
                   dark:bg-white/5 dark:hover:bg-white/10 dark:text-neutral-100 dark:ring-white/10
                 "
-                href={portfolio.links.github}
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
-
-              <a
-                className="
-                  rounded-xl px-4 py-2.5
-                  bg-white/60 hover:bg-white/80
-                  text-neutral-900
-                  ring-1 ring-black/5
-                  dark:bg-white/5 dark:hover:bg-white/10 dark:text-neutral-100 dark:ring-white/10
-                "
                 href={portfolio.links.linkedin}
                 target="_blank"
                 rel="noreferrer"
@@ -207,31 +192,6 @@ export default function Home() {
             </div>
           </div>
         </header>
-
-        {/* PROFIL 30 SECONDES */}
-        <section className="mt-10">
-          <div className={`${card}`}>
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-              <div>
-                <p className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
-                  {portfolio.quickProfile.title}
-                </p>
-
-                <ul className="mt-3 list-disc space-y-1 pl-5 text-neutral-800/90 dark:text-neutral-300">
-                  {portfolio.quickProfile.bullets.map((b) => (
-                    <li key={b}>{b}</li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="flex flex-wrap gap-2 sm:justify-end">
-                {portfolio.quickProfile.keywords.map((k) => (
-                  <Badge key={k}>{k}</Badge>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* EXPERIENCES */}
         <Section id="experience" title="Expériences">
@@ -324,7 +284,9 @@ export default function Home() {
               <div key={`${e.school}-${e.period}`} className={`${card}`}>
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                   <div>
-                    <p className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">{e.school}</p>
+                    <p className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+                      {e.school}
+                    </p>
                     <p className="text-neutral-800/90 dark:text-neutral-300">{e.degree}</p>
                   </div>
                   <p className="text-sm text-neutral-600 dark:text-neutral-400">{e.period}</p>
@@ -369,21 +331,6 @@ export default function Home() {
                 rel="noreferrer"
               >
                 LinkedIn
-              </a>
-
-              <a
-                className="
-                  rounded-xl px-4 py-2.5
-                  bg-white/60 hover:bg-white/80
-                  text-neutral-900
-                  ring-1 ring-black/5
-                  dark:bg-white/5 dark:hover:bg-white/10 dark:text-neutral-100 dark:ring-white/10
-                "
-                href={portfolio.links.github}
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
               </a>
 
               <a

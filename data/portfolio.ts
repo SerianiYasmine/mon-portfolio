@@ -31,9 +31,8 @@ export type Portfolio = {
   avatar: { src: string; alt: string };
   bio: string;
   highlights: string[];
-  links: { github: string; linkedin: string; email: string; cv: string }; // ✅ github ajouté
+  links: { linkedin: string; email: string; cv: string }; // ✅ github supprimé
   skills: string[];
-  quickProfile: { title: string; bullets: string[]; keywords: string[] };
   experiences: Experience[];
   projects: Project[];
   education: Education[];
@@ -61,7 +60,6 @@ export const portfolio: Portfolio = {
   ],
 
   links: {
-    github: "https://github.com/TON_GITHUB",
     linkedin: "https://www.linkedin.com/in/yasmine-seriani-123ab4291/",
     email: "mailto:y.seriani23@gmail.com",
     cv: "/cv.pdf",
@@ -83,16 +81,6 @@ export const portfolio: Portfolio = {
     "Swagger / OpenAPI",
     "Git",
   ],
-
-  quickProfile: {
-    title: "Profil en 30 secondes",
-    bullets: [
-      "DevOps OpenShift (alternance BPCE-IT) : déploiement et exploitation d’applications sur OpenShift/Kubernetes.",
-      "CI/CD & delivery : Jenkins, Artifactory, XL Deploy/XL Release, Docker — automatisation du build et des déploiements.",
-      "Background dev (React + Python FastAPI/Flask) : je comprends l’app pour mieux l’industrialiser et la mettre en prod.",
-    ],
-    keywords: ["DevOps", "OpenShift", "Kubernetes", "CI/CD", "Jenkins", "XL Deploy", "XL Release"],
-  },
 
   experiences: [
     {
